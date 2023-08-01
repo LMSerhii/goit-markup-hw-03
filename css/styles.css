@@ -1,0 +1,241 @@
+:root {
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Colors */
+  --pressed-state-color: #4d5ae5; /* IRIS */
+  --primary-brand-color: #404bbf; /* OCEAN */
+  --dark-color: #2e2f42; /* NAVYBLUE */
+  --success-color: #31d0aa; /* GREEN */
+  --text-color: #434455; /* SLATE */
+  --subtle-text-color: #8e8f99; /* LIGHT SLATE */
+  --accent-color: #e7e9fc; /* CORNFLOWER */
+  --ligh-color: #f4f4fd; /* CLOUD */
+  --modal-overlay-color: #2e2f42; /* NAVYBLUEMODAL */
+  --hero-background-color: #2e2f42; /* GRAY */
+  --white-background-color: #ffffff; /* WHITE */
+  --modal-background-color: #fcfcfc; /* DAIRY */
+}
+
+/*
+   |==================================
+   |  Basic styles
+   |==================================
+*/
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  background-color: var(--white-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*
+   |==================================
+   |  Logo
+   |==================================
+*/
+
+.logo {
+  font-family: var(--secondary-font);
+  color: var(--pressed-state-color);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-dark {
+  color: var(--dark-color);
+}
+
+.logo-light {
+  color: var(--ligh-color);
+}
+
+/*
+   |==================================
+   |  Header
+   |==================================
+*/
+
+.header-nav-item {
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus {
+  color: var(--primary-brand-color);
+}
+
+
+.header-address {
+  font-style: normal;
+}
+
+.header-address-item {
+  color: var(--text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-address-item:hover,
+.header-address-item:focus {
+  color: var(--primary-brand-color);
+}
+
+/*
+   |==================================
+   |  Footer
+   |==================================
+*/
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer-text {
+  color: var(--ligh-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*
+   |==================================
+   |  Index styles
+   |==================================
+*/
+
+.heroe {
+  background-color: var(--hero-background-color);
+}
+
+.heroe-title {
+  color: var(--white-background-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.heroe-btn {
+  font-family: var(--primary-font);
+  background-color: var(--pressed-state-color);
+  color: var(--white-background-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.heroe-btn:hover,
+.heroe-btn:focus {
+  background-color: var(--primary-brand-color);
+}
+
+.themes-title {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.themes-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.doing-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.our-team {
+  background-color: var(--ligh-color);
+}
+
+.our-team-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.our-team-card {
+  background-color: var(--white-background-color);
+}
+
+.our-team-card-title {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.our-team-card-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*
+   |==================================
+   |  Portfolio styles
+   |==================================
+*/
+
+.filters-btn {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  background-color: var(--ligh-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+  cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+}
+
+.product-title {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.product-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
