@@ -27,14 +27,48 @@ body {
   font-family: var(--primary-font);
   color: var(--text-color);
   background-color: var(--white-background-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
-  list-style: none;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -71,7 +105,6 @@ body {
   color: var(--dark-color);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -80,15 +113,12 @@ body {
   color: var(--primary-brand-color);
 }
 
-
 .header-address {
   font-style: normal;
 }
 
 .header-address-item {
   color: var(--text-color);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .header-address-item:hover,
@@ -107,8 +137,6 @@ body {
 
 .footer-text {
   color: var(--ligh-color);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /*
@@ -127,7 +155,6 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 0.02em;
 }
 
 .heroe-btn {
@@ -151,14 +178,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .themes-text {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .doing-title {
@@ -166,7 +190,6 @@ body {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
@@ -179,7 +202,6 @@ body {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
@@ -192,14 +214,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .our-team-card-text {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /*
@@ -230,12 +249,9 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .product-text {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
