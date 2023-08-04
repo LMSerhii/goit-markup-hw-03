@@ -58,14 +58,19 @@ img {
   text-decoration: none;
 }
 
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* reset end */
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -79,6 +84,16 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /*
@@ -154,7 +169,6 @@ img {
   color: var(--ligh-color);
   width: 264px;
   margin: 18px 0 0 0;
-
 }
 
 /*
@@ -163,13 +177,14 @@ img {
    |==================================
 */
 
+/* ===== heroe  ===== */
 .heroe {
   background-color: var(--hero-background-color);
   padding: 188px 0;
 }
 
 .heroe-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
 
@@ -203,11 +218,17 @@ img {
   background-color: var(--primary-brand-color);
 }
 
+/* ===== themes  ===== */
 .themes {
-  padding: 120px 0;
+  padding: 120px 0 60px;
 }
 
-.themes-title {
+.themes-card {
+  max-width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.themes-card-title {
   margin-bottom: 8px;
 
   color: var(--dark-color);
@@ -216,13 +237,14 @@ img {
   line-height: 1.2;
 }
 
-.themes-text {
+.themes-card-text {
   color: var(--text-color);
   font-size: 16px;
 }
 
+/* ===== doing  ===== */
 .doing {
-  padding-top: 0 0 120px 0;
+  padding: 60px 0 120px 0;
 }
 
 .doing-title {
@@ -235,6 +257,18 @@ img {
   text-transform: capitalize;
 }
 
+.doing-card {
+  max-width: 360px;
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.doing-card-img {
+  max-width: 100%;
+  object-fit: cover;
+  border: 1px solid var(--accent-color);
+}
+
+/* ===== our-team  ===== */
 .our-team {
   background-color: var(--ligh-color);
   padding: 120px 0;
@@ -252,17 +286,21 @@ img {
 
 .our-team-card {
   background-color: var(--white-background-color);
+  max-width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
+  flex-shrink: 0;
 }
 
 .our-team-card-img {
-
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .our-team-card-content {
   padding: 32px 0;
 }
 
-.our-team-card-title {
+.our-team-card-content-title {
   margin: 0 0 8px 0;
 
   color: var(--dark-color);
@@ -271,7 +309,7 @@ img {
   line-height: 1.2;
 }
 
-.our-team-card-text {
+.our-team-card-content-text {
   color: var(--text-color);
   font-size: 16px;
 }
@@ -282,6 +320,7 @@ img {
    |==================================
 */
 
+/* ===== filters  ===== */
 .filters {
   padding: 96px 0 120px 0;
 }
@@ -290,8 +329,7 @@ img {
   margin: 0 0 72px 0;
 }
 
-
-.filters-btn {
+.filters-buttons-item {
   font-family: var(--primary-font);
   font-size: 16px;
   background-color: var(--ligh-color);
@@ -300,19 +338,35 @@ img {
   letter-spacing: 0.04em;
   color: var(--pressed-state-color);
   cursor: pointer;
+
+  flex-basis: calc((100% - 96px) / 5);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-buttons-item:hover,
+.filters-buttons-item:focus {
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
 }
 
-.product-content {
-  padding: 32px 0;
+/* ===== product  ===== */
+.product-item {
+  max-width: 360px;
+
+  flex-basis: calc((100% - 72px) / 3);
 }
 
-.product-title {
+.product-item-img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.product-item-content {
+  padding: 32px 0;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+
+.product-item-content-title {
   margin-bottom: 8px;
 
   color: var(--dark-color);
@@ -321,7 +375,7 @@ img {
   line-height: 1.2;
 }
 
-.product-text {
+.product-item-content-text {
   color: var(--text-color);
   font-size: 16px;
 }
