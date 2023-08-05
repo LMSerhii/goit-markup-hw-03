@@ -47,37 +47,41 @@
   <body>
     <div class="page-container">
       <header class="header">
-        <div class="container">
+        <div class="header-container container">
+          <!-- ==== header-nav ==== -->
           <nav class="header-nav">
+            <!-- ==== logo ==== -->
             <a href="./index.html" class="logo link">
               Web<span class="logo-dark">Studio</span>
             </a>
-            <ul class="list">
-              <li>
-                <a href="./index.html" class="header-nav-item link">Studio</a>
+            <!-- ==== nav ==== -->
+            <ul class="header-nav-list list">
+              <li class="header-nav-item">
+                <a href="./index.html" class="header-nav-link link">Studio</a>
               </li>
-              <li>
-                <a href="./portfolio.html" class="header-nav-item link">
+              <li class="header-nav-item">
+                <a href="./portfolio.html" class="header-nav-link link">
                   Portfolio
                 </a>
               </li>
-              <li>
-                <a href="" class="header-nav-item link">Contacts</a>
+              <li class="header-nav-item">
+                <a href="" class="header-nav-link link">Contacts</a>
               </li>
             </ul>
           </nav>
+          <!-- ==== header-address ==== -->
           <address class="header-address">
-            <ul class="list">
-              <li>
+            <ul class="header-address-list list">
+              <li class="header-address-item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="header-address-item link"
+                  class="header-address-link link"
                 >
                   info@devstudio.com
                 </a>
               </li>
-              <li>
-                <a href="tel:+110001111111" class="header-address-item link">
+              <li class="header-address-item">
+                <a href="tel:+110001111111" class="header-address-link link">
                   +11 (000) 111-11-11
                 </a>
               </li>
@@ -85,206 +89,166 @@
           </address>
         </div>
       </header>
-      <main>
+      <main class="main">
+
+        <!-- ==== filters ==== -->
         <section class="filters">
           <div class="container">
             <h1 hidden class="visually-hidden">filters</h1>
-            <div class="filters-buttons">
-              <ul class="cards list">
-                <li>
-                  <button type="button" class="filters-buttons-item">All</button>
-                </li>
-                <li>
-                  <button type="button" class="filters-buttons-item">
-                    Web Site
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="filters-buttons-item">App</button>
-                </li>
-                <li>
-                  <button type="button" class="filters-buttons-item">
-                    Des ign
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="filters-buttons-item">
-                    Mar keting
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <ul class="filters-buttons list">
+              <li class="filters-item">
+                <button type="button" class="filters-button">All</button>
+              </li>
+              <li class="filters-item">
+                <button type="button" class="filters-button">Web Site</button>
+              </li>
+              <li class="filters-item">
+                <button type="button" class="filters-button">App</button>
+              </li>
+              <li class="filters-item">
+                <button type="button" class="filters-button">Design</button>
+              </li>
+              <li class="filters-item">
+                <button type="button" class="filters-button">Marketing</button>
+              </li>
+            </ul>
+
+        <!-- ==== product ==== -->
             <div class="product">
-              <ul class="cards list">
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-01.jpg"
-                          alt="Banking App Interface Concept"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">
-                          Banking App Interface Concept
-                        </h2>
-                        <p class="product-item-content-text">App</p>
-                      </div>
-                    </a>
-                  </div>
+              <ul class="product-list cards list">
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-01.jpg"
+                      alt="Banking App Interface Concept"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">
+                        Banking App Interface Concept
+                      </h2>
+                      <p class="product-item-content-text">App</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-02.jpg"
-                          alt="Marketing"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">
-                          Cashless Payment
-                        </h2>
-                        <p class="product-item-content-text">Marketing</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-02.jpg"
+                      alt="Marketing"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">
+                        Cashless Payment
+                      </h2>
+                      <p class="product-item-content-text">Marketing</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-03.jpg"
-                          alt="Meditation App"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">Meditation App</h2>
-                        <p class="product-item-content-text">App</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-03.jpg"
+                      alt="Meditation App"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">Meditation App</h2>
+                      <p class="product-item-content-text">App</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-04.jpg"
-                          alt="Taxi Service"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">Taxi Service</h2>
-                        <p class="product-item-content-text">Marketing</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-04.jpg"
+                      alt="Taxi Service"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">Taxi Service</h2>
+                      <p class="product-item-content-text">Marketing</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-05.jpg"
-                          alt="Screen Illustrations"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">
-                          Screen Illustrations
-                        </h2>
-                        <p class="product-item-content-text">Design</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-05.jpg"
+                      alt="Screen Illustrations"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">
+                        Screen Illustrations
+                      </h2>
+                      <p class="product-item-content-text">Design</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-06.jpg"
-                          alt="Online Courses"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">Online Courses</h2>
-                        <p class="product-item-content-text">Marketing</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-06.jpg"
+                      alt="Online Courses"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">Online Courses</h2>
+                      <p class="product-item-content-text">Marketing</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-07.jpg"
-                          alt="Instagram Stories Concept"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">
-                          Instagram Stories Concept
-                        </h2>
-                        <p class="product-item-content-text">Design</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-07.jpg"
+                      alt="Instagram Stories Concept"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">
+                        Instagram Stories Concept
+                      </h2>
+                      <p class="product-item-content-text">Design</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-08.jpg"
-                          alt="Organic Food"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">Organic Food</h2>
-                        <p class="product-item-content-text">Web Site</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-08.jpg"
+                      alt="Organic Food"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">Organic Food</h2>
+                      <p class="product-item-content-text">Web Site</p>
+                    </div>
+                  </a>
                 </li>
-                <li>
-                  <div class="product-item">
-                    <a href="#" class="link">
-                      <div class="product-item-img">
-                        <img
-                          src="./images/portfolio/img-09.jpg"
-                          alt="Fresh Coffee"
-                          width="360"
-                          height="300"
-                        />
-                      </div>
-                      <div class="product-item-content">
-                        <h2 class="product-item-content-title">Fresh Coffee</h2>
-                        <p class="product-item-content-text">Web Site</p>
-                      </div>
-                    </a>
-                  </div>
+                <li class="product-item">
+                  <a href="#" class="link">
+                    <img
+                      src="./images/portfolio/img-09.jpg"
+                      alt="Fresh Coffee"
+                      width="360"
+                      height="300"
+                    />
+                    <div class="product-item-content">
+                      <h2 class="product-item-content-title">Fresh Coffee</h2>
+                      <p class="product-item-content-text">Web Site</p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>

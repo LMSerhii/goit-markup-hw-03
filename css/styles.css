@@ -62,7 +62,6 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* reset end */
@@ -92,7 +91,7 @@ img {
   flex-direction: column;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
@@ -110,6 +109,8 @@ main {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  /* margin-right: 76px; */
 }
 
 .logo-dark {
@@ -130,15 +131,35 @@ main {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.header-nav-item {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav-link {
+  display: block;
+  padding: 24px 0;
+
   color: var(--dark-color);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.header-nav-item:hover,
-.header-nav-item:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: var(--primary-brand-color);
 }
 
@@ -146,12 +167,17 @@ main {
   font-style: normal;
 }
 
-.header-address-item {
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-address-link {
   color: var(--text-color);
 }
 
-.header-address-item:hover,
-.header-address-item:focus {
+.header-address-link:hover,
+.header-address-link:focus {
   color: var(--primary-brand-color);
 }
 
@@ -224,8 +250,7 @@ main {
 }
 
 .themes-card {
-  max-width: 264px;
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .themes-card-title {
@@ -258,13 +283,7 @@ main {
 }
 
 .doing-card {
-  max-width: 360px;
-  flex-basis: calc((100% - 48px) / 3);
-}
-
-.doing-card-img {
-  max-width: 100%;
-  object-fit: cover;
+  flex-basis: calc((100% - 24px * 2) / 3);
   border: 1px solid var(--accent-color);
 }
 
@@ -286,18 +305,12 @@ main {
 
 .our-team-card {
   background-color: var(--white-background-color);
-  max-width: 264px;
-  flex-basis: calc((100% - 72px) / 4);
-  flex-shrink: 0;
-}
-
-.our-team-card-img {
-  max-width: 100%;
-  object-fit: cover;
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .our-team-card-content {
   padding: 32px 0;
+  text-align: center;
 }
 
 .our-team-card-content-title {
@@ -327,9 +340,12 @@ main {
 
 .filters-buttons {
   margin: 0 0 72px 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
-.filters-buttons-item {
+.filters-button {
   font-family: var(--primary-font);
   font-size: 16px;
   background-color: var(--ligh-color);
@@ -338,21 +354,25 @@ main {
   letter-spacing: 0.04em;
   color: var(--pressed-state-color);
   cursor: pointer;
+  padding: 12px 24px;
 
-  flex-basis: calc((100% - 96px) / 5);
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
 }
 
-.filters-buttons-item:hover,
-.filters-buttons-item:focus {
+.filters-button:hover,
+.filters-button:focus {
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
 }
 
 /* ===== product  ===== */
-.product-item {
-  max-width: 360px;
+.product-list {
+  row-gap: 48px;
+}
 
-  flex-basis: calc((100% - 72px) / 3);
+.product-item {
+  flex-basis: calc((100% - 24 * 2px) / 3);
 }
 
 .product-item-img {
@@ -361,7 +381,7 @@ main {
 }
 
 .product-item-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid var(--accent-color);
   border-top: none;
 }
